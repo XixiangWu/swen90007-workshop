@@ -9,7 +9,7 @@ public class DBConnection {
 
     // JDBC driver name and database URL
 //    private static final String DB_CONNECTION = "jdbc:postgresql://localhost:5432/bookshop";
-    private static final String DB_CONNECTION = "postgres://aopdyzhcotqqme:ae5f296058696c800bef11a36bf53752bf2169dfc9f1ca5c9b3c56f2520ef6b5@ec2-174-129-43-40.compute-1.amazonaws.com:5432/dcmimk7i0tg061";
+    private static final String DB_CONNECTION = "jdbc:postgres://aopdyzhcotqqme:ae5f296058696c800bef11a36bf53752bf2169dfc9f1ca5c9b3c56f2520ef6b5@ec2-174-129-43-40.compute-1.amazonaws.com:5432/dcmimk7i0tg061";
 
     // Database credentials
     private static final String DB_USER = "aopdyzhcotqqme";
