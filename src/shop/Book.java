@@ -34,7 +34,7 @@ public class Book {
     public float getPrice() {return price;}
     public int getCopies() {return copies;}
 
-    public static List<Book> getAllAvaliableBooks() {
+    public static List<Book> getAllAvailableBooks() {
         BookFinder finder = new BookFinder();
         List<Book> result = new ArrayList<Book>();
         List<BookGateway> booksRecords = finder.findAvailableBooks();
@@ -46,5 +46,4 @@ public class Book {
 
         return result;
     }
-
 }

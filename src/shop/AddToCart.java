@@ -1,5 +1,8 @@
 package shop;
 
+import database.BookFinder;
+import database.BookGateway;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -17,8 +20,7 @@ public class AddToCart extends HttpServlet {
         PrintWriter out = response.getWriter();
         String bookISBN = request.getParameter("isbn");
         ShoppingCart cart = User.getCustomer().getCart();
-        Book book = Persistence.getBook(bookISBN);
-
+        Book book = BookFinder.getBook(Integer.parseInt(bookISBN));
 
         out.println("<!DOCTYPE html>");
         out.println("<html>");
@@ -35,7 +37,7 @@ public class AddToCart extends HttpServlet {
         } else {
             cart.addBook(book);
             out.println("Book was added successfully!");
-            book.setCopies(book.getCopies() - 1);
+            BookFinder.addToCart(Integer.parseInt(bookISBN));
         }
         out.println("</div>");
         out.println("<div class='container'>");

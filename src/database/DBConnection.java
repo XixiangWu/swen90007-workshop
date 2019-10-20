@@ -8,18 +8,18 @@ import java.sql.SQLException;
 public class DBConnection {
 
     // JDBC driver name and database URL
-
     private static final String DB_CONNECTION = "jdbc:postgresql://localhost:5432/bookshop";
 
     // Database credentials
     private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "123";
+    private static final String DB_PASSWORD = "xindefengbao12";
 
     private static Connection dbConnection = null;
 
     public static PreparedStatement prepare(String stm) throws SQLException {
 
         PreparedStatement preparedStatement = null;
+
         try {
             Connection dbConnection = getDBConnection();
             preparedStatement = dbConnection.prepareStatement(stm);
@@ -34,6 +34,7 @@ public class DBConnection {
         try {
             //Register JDBC driver
             DriverManager.registerDriver(new org.postgresql.Driver());
+
             //Open a connection
             dbConnection = DriverManager.getConnection(
                     DB_CONNECTION, DB_USER, DB_PASSWORD);

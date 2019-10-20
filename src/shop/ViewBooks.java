@@ -18,7 +18,8 @@ public class ViewBooks extends HttpServlet {
     * */
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<Book> books = Persistence.getAllBooks();
+
+        List<Book> books = Book.getAllAvailableBooks();
 
         response.setContentType("text/html");
 

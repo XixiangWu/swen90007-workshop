@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="swen90007-workshop:war exploded">
+  <artifact type="exploded-war" build-on-make="true" name="swen90007-workshop:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/swen90007_workshop_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="OnlineBookShopProject/web/Web" />
@@ -7,7 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="OnlineBookShopProject" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="postgresql-42.2.6" />
+        </element>
       </element>
+      <element id="library" level="project" name="postgresql-42.2.6" />
     </root>
   </artifact>
 </component>
