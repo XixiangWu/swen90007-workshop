@@ -11,8 +11,8 @@ public class DBConnection {
     private static final String DB_CONNECTION = "jdbc:postgresql://localhost:5432/bookshop";
 
     // Database credentials
-    private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "xindefengbao12";
+    private static final String DB_USER = "aopdyzhcotqqme";
+    private static final String DB_PASSWORD = "ae5f296058696c800bef11a36bf53752bf2169dfc9f1ca5c9b3c56f2520ef6b5";
 
     private static Connection dbConnection = null;
 

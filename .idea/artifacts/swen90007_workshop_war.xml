@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="swen90007-workshop:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/swen90007_workshop_war</output-path>
+    <root id="archive" name="swen90007-workshop_war.war">
+      <element id="artifact" artifact-name="swen90007-workshop:war exploded" />
+    </root>
+  </artifact>
+</component>

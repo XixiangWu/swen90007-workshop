@@ -78,7 +78,7 @@ public class BookFinder {
             PreparedStatement stm = DBConnection.prepare(updateBookCopiesStatement);
             stm.setInt(1,bookId);
             stm.executeUpdate();
-            System.out.println("Book Copies update successfully");
+            System.out.println("Book(" + bookId + ") Copies update successfully");
         } catch (SQLException e) {
             System.out.print("ERROR: method: addToCart: ");
             System.out.println(e.getMessage());
