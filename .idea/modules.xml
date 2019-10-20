@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/swen90007-workshop.iml" filepath="$PROJECT_DIR$/swen90007-workshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OnlineBookShopProject.iml" filepath="$PROJECT_DIR$/OnlineBookShopProject.iml" />
     </modules>
   </component>
 </project>

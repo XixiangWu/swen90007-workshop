@@ -15,7 +15,6 @@ public class AddToCart extends HttpServlet {
 
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-//        int isbn = Integer.parseInt(request.getParameter("isbn"));
         String bookISBN = request.getParameter("isbn");
         ShoppingCart cart = User.getCustomer().getCart();
         Book book = Persistence.getBook(bookISBN);

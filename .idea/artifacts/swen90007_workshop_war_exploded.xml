@@ -2,10 +2,10 @@
   <artifact type="exploded-war" name="swen90007-workshop:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/swen90007_workshop_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="swen90007-workshop/web/Web" />
+      <element id="javaee-facet-resources" facet="OnlineBookShopProject/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="swen90007-workshop" />
+          <element id="module-output" name="OnlineBookShopProject" />
         </element>
       </element>
     </root>
